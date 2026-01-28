@@ -1,6 +1,6 @@
 public class Duplicate {
     public static void main(String[] args) {
-        String [] classes = {"world history","gym","precalc","ela","band","cs","chem","french"};
+        String [] classes = {"world history","gym","precalc","ela","band","cs","chem","chem","french"};
         System.out.println(containsDuplicate(classes));
 
         
