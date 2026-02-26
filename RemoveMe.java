@@ -1,5 +1,9 @@
 import java.util.ArrayList;
-
+/**
+ * Kiana Tjon
+ * 2/9/2026
+ * Remove Me
+ */
 public class RemoveMe {
     public static void main(String[] args) {
         ArrayList<Integer> nums = new ArrayList<Integer>();
