@@ -1,3 +1,4 @@
+package Arrays;
 public class Criteria {
     public static void main(String[] args) {
         String [] names = {"Jack","Uri","Kiana","Kellin","Remi"};

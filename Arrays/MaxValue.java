@@ -1,3 +1,4 @@
+package Arrays;
 public class MaxValue {
     public static void main(String[] args) {
         int [] nums = {-2,0,5,7,9};

@@ -1,3 +1,4 @@
+package Arrays;
 public class Selection {
     public static void main(String[] args) {
         String [] classes = {"world history","gym","precalc","ela","band","cs","chem","chem","french"};
