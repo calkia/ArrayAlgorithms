@@ -1,10 +1,14 @@
 package twoDArrays;
-
+/**
+ * Kiana Tjon / 3-2-26 / Practive Three
+ */
 public class Practicethree {
     public static void main(String[] args) {
         String[][] arr = {{"Jack", "Jill", "Jane", "Joey"},{"Maurn", "Molly", "Mason", "Maureen"},{"Emma", "Eileen", "Elizabeth",	"Emma"}};
         print(shortenMe(arr));
-        System.out.println(countDuplicates(arr));
+        System.out.println();
+        System.out.println("row index with most duplicates: "+ countDuplicates(arr));
+        System.out.println();
         print(shiftMe(arr));
     }
     public static void print(String[][] arr){
@@ -16,12 +20,13 @@ public class Practicethree {
         }
     }
     public static String[][] shortenMe(String[][] arr){
+        String[][] newArr = new String[arr.length][arr[0].length];
         for(int row = 0; row<arr.length; row++){
             for(int col = 0; col<arr[0].length; col++){
-                arr[row][col] = arr[row][col].substring(0,3);
+                newArr[row][col] = arr[row][col].substring(0,3);
             }
         }
-        return arr;
+        return newArr;
     }
     public static int countDuplicates(String[][] arr){
         int most = 0;
@@ -44,14 +49,14 @@ public class Practicethree {
 
     }
     public static String[][] shiftMe(String[][] arr){
-        String[][] newArr = new String[arr.length-1][arr[0].length-1];
+        String[][] newArr = new String[arr.length][arr[0].length];
         for(int row = 0; row<arr.length; row++){
             for(int col = 0; col<arr[0].length; col++){
                 if(row == 0 && col == 0){
                     newArr[row][col] = arr[arr.length-1][arr[0].length-1];
                 }
                 else{
-                    if(col == arr[row].length-1){
+                    if(col == 0){
                         newArr[row][col] = arr[row-1][0];
                     }
                     else{
